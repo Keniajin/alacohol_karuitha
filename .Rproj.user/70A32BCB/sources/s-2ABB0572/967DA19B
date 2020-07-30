@@ -1,0 +1,32 @@
+{
+    "id": "967DA19B",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1596100779476.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "expression": "df_plot",
+        "caption": "df_plot",
+        "totalObservations": 1082,
+        "displayedObservations": 1082,
+        "variables": 7,
+        "cacheKey": "A770D192",
+        "object": "df_plot",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=df_plot&cache_key=A770D192&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 7809635517437470070,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1596100779476,
+    "read_only": false,
+    "read_only_alternatives": []
+}
