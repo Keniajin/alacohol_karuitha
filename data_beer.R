@@ -301,16 +301,26 @@ class(full_beer_data$type)
 
 ##########################################################################################
 ##Visualize the data ----
-df_plot <- full_beer_data %>% group_by(type) %>% filter(n() >= 7) %>% 
-  mutate(median_perc=median(alcohol_percent, na.rm = T))
 
-
-p <- ggplot(df_plot,aes(x = reorder(type, median_perc), 
+##Option A
+median_na <- function(x)median(x,na.rm = T)
+ggplotly(full_beer_data %>% group_by(type) %>% filter(n() >= 7) %>% ungroup %>% 
+  ggplot(aes(x = reorder(type, alcohol_percent, median_na), 
   y = alcohol_percent, fill = type)) + geom_boxplot() + 
   theme_hc() + theme(legend.position = "none") + 
-  theme(axis.text.x = element_text(angle = 90))
+  theme(axis.text.x = element_text(angle = 90)))
 
+
+### option B
+df_plot <- full_beer_data %>% group_by(type) %>% filter(n() >= 7) %>% 
+  mutate(median_perc=median(alcohol_percent, na.rm = T))
+p <- ggplot(df_plot,aes(x = reorder(type, median_perc), 
+                        y = alcohol_percent, fill = type)) + geom_boxplot() + 
+  theme_hc() + theme(legend.position = "none") + 
+  theme(axis.text.x = element_text(angle = 90))
 ggplotly(p)
+
+
 ##Alcohol content vs ratings ----
 ggplotly(full_beer_data %>% group_by(type) %>% ggplot(aes(x = alcohol_percent, 
                               y = average_ratings, 

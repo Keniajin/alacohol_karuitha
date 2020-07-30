@@ -3,22 +3,22 @@
     "path": "D:/rjob/karuitha/data_beer.R",
     "project_path": "data_beer.R",
     "type": "r_source",
-    "hash": "2714844541",
+    "hash": "4141529865",
     "contents": "",
     "dirty": false,
     "created": 1596100494084.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
-        "cursorPosition": "318,0",
-        "scrollLine": "295"
+        "cursorPosition": "320,0",
+        "scrollLine": "304"
     },
     "folds": "",
-    "lastKnownWriteTime": 1596100831,
+    "lastKnownWriteTime": 1596102074,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1596100831350,
+    "last_content_update": 1596102074030,
     "read_only": false,
     "read_only_alternatives": []
 }
